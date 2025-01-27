@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#DFF5D1"
+    android:padding="16dp">
+
+    <!-- Header Section -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <!-- Back Button -->
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/wildlifelogo"
+            android:contentDescription="Back Button" />
+
+        <!-- Title -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="Ticket Booking"
+            android:textColor="#228B22"
+            android:textSize="24sp"
+            android:fontFamily="sans-serif-medium" />
+    </LinearLayout>
+
+    <!-- Calendar Picker -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="16dp"
+        android:padding="8dp">
+
+        <!-- Use Material Date Picker or CalendarView -->
+        <CalendarView
+            android:layout_marginTop="80dp"
+            android:id="@+id/calendarView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:dateTextAppearance="@style/TextAppearance.AppCompat.Medium" />
+    </LinearLayout>
+
+    <!-- Date and Time Section -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Select Date and Time"
+        android:textColor="#228B22"
+        android:textSize="16sp"
+        android:fontFamily="sans-serif"
+        tools:ignore="HardcodedText" />
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <!-- Date Chips -->
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:layout_marginEnd="8dp"
+                android:background="#B5E2B8"
+                android:gravity="center"
+                android:text="Dec\n08"
+                android:textColor="#000000"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:layout_marginEnd="8dp"
+                android:background="#B5E2B8"
+                android:gravity="center"
+                android:text="Dec\n10"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp" />
+
+            <!-- Add more date chips as needed -->
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <!-- Bottom Section -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:background="#A9A9A9"
+        android:padding="8dp">
+
+        <!-- Minus Button -->
+        <Button
+            android:id="@+id/btnMinus"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:backgroundTint="#7EC882"
+            android:text="-"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" />
+
+        <!-- Quantity -->
+        <TextView
+            android:id="@+id/ticketQuantity"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="1"
+            android:textSize="16sp"
+            android:textColor="#000000" />
+
+        <!-- Plus Button -->
+        <Button
+            android:id="@+id/btnPlus"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:backgroundTint="#7EC882"
+            android:text="+"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" />
+
+        <!-- Total Price -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_weight="1"
+            android:text="Total\nRS 80"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:gravity="center" />
+
+        <!-- Buy Ticket Button -->
+        <Button
+            android:id="@+id/btnBuyTicket"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Buy Ticket"
+            android:backgroundTint="#7EC882"
+            android:textColor="#FFFFFF"
+            android:padding="8dp" />
+    </LinearLayout>
+</LinearLayout>

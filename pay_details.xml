@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DFF5D1"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Header Section -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <!-- Back Button -->
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/wildlifelogo"
+                android:contentDescription="Back Button" />
+
+            <!-- Title -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:text="Payment Details"
+                android:textColor="#228B22"
+                android:textSize="24sp"
+                android:fontFamily="sans-serif-medium" />
+        </LinearLayout>
+
+        <!-- Payment Options -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="100dp">
+
+            <!-- Payment Option Logos -->
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginEnd="8dp"
+                android:src="@drawable/paypal"
+                android:contentDescription="PayPal" />
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginEnd="8dp"
+                android:src="@drawable/visapay"
+                android:contentDescription="Visa" />
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginEnd="8dp"
+                android:src="@drawable/masterpay"
+                android:contentDescription="MasterCard"></ImageView>
+
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginEnd="8dp"
+                android:src="@drawable/disscovericon"
+                android:contentDescription="Discover" />
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/amexicon"
+                android:contentDescription="Amex" />
+        </LinearLayout>
+
+        <!-- Cardholder Name -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Cardholder name"
+            android:textColor="#000000"
+            android:textSize="14sp"
+            android:fontFamily="sans-serif" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:hint="Sampath Amarasinghe"
+            android:text="Sampath Amarasinghe"
+            android:background="#000000"
+            android:textColor="#FFFFFF"
+            android:padding="8dp"
+            android:textSize="16sp" />
+
+        <!-- Card Number -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Card Number"
+            android:textColor="#000000"
+            android:textSize="14sp"
+            android:fontFamily="sans-serif" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:hint="**** **** **** 3947"
+            android:text="**** **** **** 3947"
+            android:background="#000000"
+            android:textColor="#FFFFFF"
+            android:padding="8dp"
+            android:textSize="16sp" />
+
+        <!-- Expiry Month and Year -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="16dp">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Exp Month"
+                    android:textColor="#000000"
+                    android:textSize="14sp"
+                    android:fontFamily="sans-serif" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:hint="12"
+                    android:text="12"
+                    android:background="#000000"
+                    android:textColor="#FFFFFF"
+                    android:padding="8dp"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="16dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Exp Year"
+                    android:textColor="#000000"
+                    android:textSize="14sp"
+                    android:fontFamily="sans-serif" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:hint="2024"
+                    android:text="2024"
+                    android:background="#000000"
+                    android:textColor="#FFFFFF"
+                    android:padding="8dp"
+                    android:textSize="16sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- CVC -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="CVC"
+            android:textColor="#000000"
+            android:textSize="14sp"
+            android:fontFamily="sans-serif" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:hint="123"
+            android:text="123"
+            android:background="#000000"
+            android:textColor="#FFFFFF"
+            android:padding="8dp"
+            android:textSize="16sp" />
+
+        <!-- Set as Default -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="16dp"
+            android:gravity="center_vertical">
+
+            <Switch
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:thumbTint="#228B22"
+                android:trackTint="#A9A9A9"
+                android:checked="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="Set as Default"
+                android:textColor="#000000"
+                android:textSize="14sp"
+                android:fontFamily="sans-serif" />
+        </LinearLayout>
+
+        <!-- Pay Button -->
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="Pay"
+            android:background="#228B22"
+            android:textColor="#FFFFFF"
+            android:padding="12dp"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+</ScrollView>

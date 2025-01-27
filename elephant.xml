@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DFF5D1"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Header Section -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <!-- Back Button -->
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/wildlifelogo"
+                android:contentDescription="Back Button" />
+
+            <!-- Title -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:text="Elephant"
+                android:textColor="#228B22"
+                android:textSize="24sp"
+                android:fontFamily="sans-serif-medium" />
+        </LinearLayout>
+
+        <!-- Image Section -->
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:src="@drawable/elephant5"
+            android:scaleType="centerCrop"
+            android:layout_marginTop="16dp"
+            android:contentDescription="Main Elephant Image" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp"
+            android:gravity="center">
+
+            <!-- Additional Images -->
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:src="@drawable/elephant"
+                android:scaleType="centerCrop"
+                android:contentDescription="Elephant Image 1"
+                android:layout_marginEnd="4dp" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:src="@drawable/elephant2"
+                android:scaleType="centerCrop"
+                android:contentDescription="Elephant Image 2"
+                android:layout_marginEnd="4dp" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:src="@drawable/elephantroad"
+                android:scaleType="centerCrop"
+                android:contentDescription="Elephant Image 3" />
+        </LinearLayout>
+
+        <!-- Description Title -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="About Asian Elephant"
+            android:textSize="20sp"
+            android:textColor="#228B22"
+            android:fontFamily="sans-serif-medium" />
+
+        <!-- Description Section -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="#7EC882"
+            android:padding="8dp"
+            android:text="The elephants can be seen in Wilpattu, especially in the western sector with more abundant grasslands (e.g. Pomparippu and Milavillu) and the northern sector. Large herds consisting of more than 50 individuals that include tuskers are known to migrate along the park boarders, yet these herds are rarely encountered in the central villus and tanks, with an exception for single elephants."
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:fontFamily="sans-serif" />
+    </LinearLayout>
+</ScrollView>

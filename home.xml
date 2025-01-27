@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Main Content Area -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#DFF3D6"
+        android:layout_marginBottom="56dp"> <!-- Leave space for BottomNavigationView -->
+
+        <!-- Header Section -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:padding="8dp">
+
+            <ImageButton
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/wildlifelogo"
+                android:contentDescription="Menu" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Wilpattu National Park"
+                android:gravity="center"
+                android:textSize="30sp"
+                android:textColor="#33691E"
+                android:layout_marginLeft="16dp" />
+        </LinearLayout>
+
+        <!-- Image Section -->
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginTop="20dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/lepord4" />
+
+        <!-- Main Menu Text -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Animals"
+            android:gravity="center"
+            android:layout_marginTop="16dp"
+            android:textColor="#33691E"
+            android:textSize="20sp"
+            android:id="@+id/animals"/>
+
+        <!-- Grid Menu -->
+        <GridLayout
+            android:id="@+id/grid_buttons"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:columnCount="2"
+            android:rowCount="2">
+
+            <Button
+                android:id="@+id/ticketbooking"
+                android:layout_width="50dp"
+                android:layout_height="150dp"
+                android:layout_margin="8dp"
+                android:layout_rowWeight="5"
+                android:layout_columnWeight="1"
+                android:backgroundTint="#1F7837"
+                android:text="Ticket Booking"
+                app:cornerRadius="10dp" />
+
+            <Button
+                android:id="@+id/bunglowbooking"
+                android:layout_width="50dp"
+                android:layout_height="150dp"
+                android:layout_margin="8dp"
+                android:layout_rowWeight="5"
+                android:layout_columnWeight="1"
+                android:backgroundTint="#1F7837"
+                android:text="Bunglow Reservation"
+                app:cornerRadius="10dp" />
+
+            <Button
+                android:id="@+id/guidebooking"
+                android:layout_width="50dp"
+                android:layout_height="150dp"
+                android:layout_margin="8dp"
+                android:layout_rowWeight="5"
+                android:layout_columnWeight="1"
+                android:backgroundTint="#1F7837"
+                android:text="Guide Booking"
+                app:cornerRadius="10dp" />
+
+            <Button
+                android:id="@+id/attraction"
+                android:layout_width="50dp"
+                android:layout_height="150dp"
+                android:layout_margin="8dp"
+                android:layout_rowWeight="5"
+                android:layout_columnWeight="1"
+                android:backgroundTint="#1F7837"
+                android:text="Attraction"
+                android:drawableTop="@drawable/scale_image"
+                android:drawablePadding="4dp"
+                app:cornerRadius="10dp" />
+
+
+        </GridLayout>
+
+    </LinearLayout>
+
+    <!-- Bottom Navigation Bar -->
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_gravity="bottom"
+        android:background="?android:attr/windowBackground"
+        app:menu="@menu/bottom_nav_menu" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
